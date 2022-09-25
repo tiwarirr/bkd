@@ -10,6 +10,10 @@ socialdata={
     'date': format.asString('dd/MM/yyyy',new Date)
 }
 
+app.get("/",(req,res)=>{
+    res.send('Hello World')
+})
+
 app.get("/api/vi/test/:id",(req,res)=>{
     token=req.params.id
     res.send(token)
